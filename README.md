@@ -8,7 +8,7 @@ Ele ajuda a escrever aplicativos que se comportam de maneira consistente, são e
 
 **Serão documentados três testes:** dois testes da função createStore e os testes do utilitário compose
 
-## createStore
+## [createStore](https://github.com/reduxjs/redux/blob/master/test/createStore.spec.ts)
 
 Cria uma store do Redux que contém a árvore de estado completa do seu aplicativo. Deve haver apenas uma única loja em seu aplicativo.
 
@@ -135,7 +135,7 @@ Esse teste verifica a capacidade de uma store de aplicar um reducer a um estado 
 ```
 Esse teste confere se ao substituir um reducer por outro a store garante que o estado atual não será afetado. Para isso são disparadas actions com o reducer todos que adiciona os items no final da lista. Em seguida o reducer é substituído pelo todosReverse que adiciona os items no início da lista e é disparada uma action. Ao final o reducer é substituído de volta para o todos e é verificado após o disparo de uma action se o estado é o esperado.
 
-## compose
+## [compose](https://github.com/reduxjs/redux/blob/master/test/compose.spec.ts)
 
 Compõe funções da direita para a esquerda.
 
